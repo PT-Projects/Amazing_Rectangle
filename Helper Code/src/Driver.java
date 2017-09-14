@@ -27,8 +27,12 @@ public class Driver {
         drawArea.addRectangle(fr);
 
         // Create a BouncingRectangle and add it to the drawArea
-        BouncingRectangle br = new BouncingRectangle(drawArea.getWidth()/2 - 75, 0, 50, 50, Color.RED);
+        BouncingRectangle br = new BouncingRectangle(drawArea.getWidth()/2 - 100, 0, 50, 50, Color.RED);
         drawArea.addRectangle(br);
+
+        // Create a BouncingRectangle and add it to the drawArea
+        ColoringRectangle cr = new ColoringRectangle(drawArea.getWidth()/2 - 50, 0, 50, 50);
+        drawArea.addRectangle(cr);
 
         // Create inner class to assist with animation
         class TimerListener implements ActionListener {
