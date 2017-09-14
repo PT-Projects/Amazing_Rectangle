@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class ColoringRectangle extends AbstractRectangle {
 
-    Color color = new Color(255,255,255);
+    private Color color = new Color(255,255,255);
 
     /**
      * Constructs a FallingRectangle

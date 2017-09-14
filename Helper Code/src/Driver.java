@@ -23,16 +23,20 @@ public class Driver {
         frame.setVisible(true);
 
         // Create a FallingRectangle and add it to the drawArea
-        FallingRectangle fr = new FallingRectangle(drawArea.getWidth()/2 - 25, 0, 50, 50, Color.BLUE);
+        FallingRectangle fr = new FallingRectangle(drawArea.getWidth()/2, 0, 50, 50, Color.BLUE);
         drawArea.addRectangle(fr);
 
         // Create a BouncingRectangle and add it to the drawArea
-        BouncingRectangle br = new BouncingRectangle(drawArea.getWidth()/2 - 100, 0, 50, 50, Color.RED);
+        BouncingRectangle br = new BouncingRectangle(drawArea.getWidth()/2 - 50, 0, 50, 50, Color.RED);
         drawArea.addRectangle(br);
 
-        // Create a BouncingRectangle and add it to the drawArea
-        ColoringRectangle cr = new ColoringRectangle(drawArea.getWidth()/2 - 50, 0, 50, 50);
+        // Create a ColoringRectangle and add it to the drawArea
+        ColoringRectangle cr = new ColoringRectangle(drawArea.getWidth()/2 - 100, 0, 50, 50);
         drawArea.addRectangle(cr);
+
+        // Create a PersonalRectangle and add it to the drawArea
+        PersonalRectangle pr = new PersonalRectangle(drawArea.getWidth()/2 + 50, 0, 50, 50);
+        drawArea.addRectangle(pr);
 
         // Create inner class to assist with animation
         class TimerListener implements ActionListener {
