@@ -1,6 +1,6 @@
-1.
-2.
-3.
-4.
-5.
-6.
+1. I have no questions.
+2. UML Diagram
+3. Polymorphism is used in the AbstractRectangle class that allows the ability to create basic rectangles with basic actions.
+4. The program preforms animation by updating the DrawingArea every 10 ticks, while also calling the AbstractRectangle.act() method to change where and what the rectangle looks like on the display.
+5. The benefits are that every class extending it will require an act() method.
+6. The AbstractRectangle class would have to extend Shape not Rectangle.
