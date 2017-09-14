@@ -26,12 +26,15 @@ public class FallingRectangle extends AbstractRectangle {
     @Override
     public void act(int drawAreaWidth, int drawAreaHeight) {
 
+        // Spreads out Rectangle upon Impact of Screen Edge
         if (this.getMaxY() == drawAreaHeight){
             this.height = this.height-1;
             this.width = this.width+2;
-            this.translate(-1,0);
+            this.translate(-1,0); // Sets Position of Rectangle
         }
 
+        // Sets Position of Rectangle
         this.translate(0, 1);
+
     }
 }

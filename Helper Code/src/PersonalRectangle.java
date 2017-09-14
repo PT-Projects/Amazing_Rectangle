@@ -23,6 +23,7 @@ public class PersonalRectangle extends AbstractRectangle {
     public PersonalRectangle(int inX, int inY, int inW, int inH){
         super(inX, inY, inW, inH, new Color(0,0,0));
 
+        // Sets Random Starting Direction for Rectangle
         X = r.nextInt(3) - 1;
         Y = r.nextInt(3) - 1;
 
@@ -36,6 +37,7 @@ public class PersonalRectangle extends AbstractRectangle {
     @Override
     public void act(int drawAreaWidth, int drawAreaHeight){
 
+        // Changes Color of Rectangle
         try {
             if (!brighterColor) {
                 this.color = new Color(color.getRed() - 1, color.getGreen() - 1, color.getBlue() - 1);
@@ -48,6 +50,7 @@ public class PersonalRectangle extends AbstractRectangle {
             brighterColor = !brighterColor;
         }
 
+        // Changes Movement Direction of Rectangle
         if (this.getMinY() == 0){
             Y = 1;
         }
@@ -61,6 +64,7 @@ public class PersonalRectangle extends AbstractRectangle {
             X = -1;
         }
 
+        // Sets Color and Position of Rectangle
         this.setFillColor(color);
         this.translate(X,Y);
 

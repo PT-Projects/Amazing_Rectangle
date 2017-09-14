@@ -19,6 +19,7 @@ public class BouncingRectangle extends AbstractRectangle {
     public BouncingRectangle(int inX, int inY, int inW, int inH, Color inFillColor){
         super(inX, inY, inW, inH, inFillColor);
 
+        // Sets Random Starting Direction for Rectangle
         X = r.nextInt(3) - 1;
         Y = r.nextInt(3) - 1;
 
@@ -32,6 +33,7 @@ public class BouncingRectangle extends AbstractRectangle {
     @Override
     public void act(int drawAreaWidth, int drawAreaHeight){
 
+        // Changes Movement Direction of Rectangle
         if (this.getMinY() == 0){
             Y = 1;
         }
@@ -45,7 +47,9 @@ public class BouncingRectangle extends AbstractRectangle {
             X = -1;
         }
 
+        // Sets Position of Rectangle
         this.translate(X,Y);
+
     }
 
 }

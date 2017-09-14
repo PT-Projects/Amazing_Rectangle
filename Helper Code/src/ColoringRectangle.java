@@ -23,6 +23,7 @@ public class ColoringRectangle extends AbstractRectangle {
     @Override
     public void act(int drawAreaWidth, int drawAreaHeight){
 
+        // Changes Color of Rectangle
         try {
             this.color = new Color(color.getRed() - 1, color.getGreen() - 1, color.getBlue() - 1);
         }
@@ -30,7 +31,9 @@ public class ColoringRectangle extends AbstractRectangle {
 
         }
 
+        // Sets Color of Rectangle
         this.setFillColor(color);
+
     }
 
 }
