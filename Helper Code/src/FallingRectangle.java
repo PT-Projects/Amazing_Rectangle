@@ -25,6 +25,13 @@ public class FallingRectangle extends AbstractRectangle {
      */
     @Override
     public void act(int drawAreaWidth, int drawAreaHeight) {
+
+        if (this.getMaxY() == drawAreaHeight){
+            this.height = this.height-1;
+            this.width = this.width+2;
+            this.translate(-1,0);
+        }
+
         this.translate(0, 1);
     }
 }
