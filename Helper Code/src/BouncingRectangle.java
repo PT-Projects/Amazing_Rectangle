@@ -20,7 +20,7 @@ public class BouncingRectangle extends AbstractRectangle {
         super(inX, inY, inW, inH, inFillColor);
 
         // Sets Random Starting Direction for Rectangle
-        X = r.nextInt(3) - 1;
+        X = 0;
         Y = r.nextInt(3) - 1;
 
     }
